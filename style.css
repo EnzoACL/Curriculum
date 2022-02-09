@@ -1,0 +1,14 @@
+body {font-size:x-large;
+    display:flex;
+    justify-content:center}
+.wrapper {width: 20%;
+    background-color:rgb(252, 252, 252);}
+h1,h2 
+{background: black;
+     border-style:outset;    
+    text-decoration-color:rgb(94, 1, 1);
+    text-decoration-line:underline;
+    color:rgb(207, 16, 16);
+    font-style:italic;}
+.contact {color: rgb(253, 1, 148);}  
+span {color:rgb(66, 16, 247);}
