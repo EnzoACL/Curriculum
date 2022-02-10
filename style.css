@@ -12,3 +12,10 @@ h1,h2
 }
 .contact {color: rgb(255, 255, 255);}  
 span {color:rgb(66, 16, 247);}
+.spanishred {color:red;}
+.spanishyellow {color: yellow;}
+.italiangreen {color:green;}
+.italianwhite {color:white}
+li > h3 {
+    display: inline;
+}
