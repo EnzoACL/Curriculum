@@ -3,7 +3,7 @@ body {font-size:large;
     justify-content:center}
 .wrapper {width: 70%;
     background-color:rgb(129, 129, 128);
-height:200vh}
+height:200vh;}
 h1,h2, h3 
 {background: black;
     border-style:outset;    

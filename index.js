@@ -17,7 +17,7 @@ function main () {
 //    const counters = elements.map(
 //        (item)=>{
 //            return{ 
-//                elements: item,
+//                element: item,
 //                counter: 0,
 //            }
 //        }
