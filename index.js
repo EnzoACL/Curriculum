@@ -11,18 +11,35 @@ function main () {
     
     const elements = Array.from(document.body.querySelectorAll("*")); //con esta forma no es necesario hacer crear los const innecesarios.
     
-   // const elem = document.body.querySelectorAll("*") 
-   // for (let item of elem) {item.addEventListener("pointerenter",()=>{console.log("POP!")})
+    //const elements = document.body.querySelectorAll("*") 
+    //for (let item of elements) {item.addEventListener("pointerenter",()=>{console.log("POP!")})}  14 y 15 funciona
 
-    const counters = elements.map(
-        (item)=>{
-            return{
-                elements: item,
-                counter: 0,
-            }
+//    const counters = elements.map(
+//        (item)=>{
+//            return{ 
+//                elements: item,
+//                counter: 0,
+//            }
+//        }
+//    ); console.log(counters);
+//}    17-25 no funciona
+
+//Codigo profesor
+const counters = elements.map(
+    (item) => {
+        const obj = {
+            element: item,
+            counter: 0,
         }
-    );
-    console.log(counters);
+        item.addEventListener("pointerenter",()=>{
+            obj.counter++;
+            console.log(obj)
+        });
+        return obj
+    }
+)
 }
+//Codigo profesor
+window.addEventListener("load", main);
+
   
-window.addEventListener ("load",main);
